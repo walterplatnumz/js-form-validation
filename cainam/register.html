@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="reg-main-div">
+
+			<h1>REGISTER PAGE</h1>
+
+			<div id="reg-status-bar">This is the div that shows the error</div>
+
+			<form id="reg-form-temlate" method="POST">
+				<div id="reg-firstname-div">
+					<input id="firstname" class="md-input" type="text" name="Firstname" placeholder="Firstname">
+					<div class="cainam-alert-center" id="firstname-status" >Wrong Data</div>
+				</div>
+
+				<div id="reg-middlename-div">
+					<input id="middlename" class="md-input" type="text" name="Middlename" placeholder="Middlename">
+					<div class="cainam-alert-center" id="middlename-status" >Wrong Data</div>
+				</div>
+
+				<div id="reg-lastname-div">
+					<input id="lastname" class="md-input" type="text" name="Lastname" placeholder="Lastname">
+					<div class="cainam-alert-center" id="lastname-status" >Wrong Data</div>
+				</div>
+
+				<div id="reg-email-div">
+					<input id="email" class="md-input" type="text" name="Email" placeholder="Email">
+					<div class="cainam-alert-center" id="email-status" >Wrong Data</div>
+				</div>
+
+				<div id="reg-phonecall-div">
+					<input id="phonecall" class="md-input" type="text" name="Phonecall" placeholder="Phonecall">
+					<div class="cainam-alert-center" id="phonecall-status" >Wrong Data</div>
+				</div>
+
+
+				<div id="reg-password-div">
+					<input id="password" class="md-input" type="password" name="password" placeholder="Password">
+					<meter max="4" class="gn-meter" id="rg-meter"></meter>
+					<div class="cainam-alert-center" id="password-status" >Wrong Data</div>
+				</div>
+
+				<div id="reg-gender-div">
+					<label class="single-gender-container" ><p>Female</p>
+						<input class="radio-content-gender" type="radio" name="radio" checked="checked">
+						<span class="radio-checkmark"></span>
+					</label>
+
+					<label class="single-gender-container" ><p>Male</p>
+						<input class="radio-content-gender" type="radio" name="radio">
+						<span class="radio-checkmark"></span>
+					</label>
+
+				</div>
+
+				<div>
+					<input id="reg-btn" class="reg-gn-btn" type="submit" name="login" value="Create Account">
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../js/controller-register.js"></script>
+	</body>
+</html>

@@ -1,0 +1,242 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	width: 100%;
+	margin-top: 0px;
+	background: #ddd;
+}
+
+#lg-username-div {
+	margin-top: 10px;
+}
+
+#lg-status-bar, #reg-status-bar {
+	border-radius: 5px;
+	border: 1px solid green;
+	margin-bottom: 0px;
+	width: 58.5%;
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+}
+	
+#pop-login-message-div {
+	width: 55.5%;
+	border: 1px solid green;
+	border-radius: 5px;
+	padding: 8px;
+	text-align: center;
+	marker-start: 20px;
+	position: relative;
+	float: right;
+	margin-right: 123px;
+}
+
+.gn-meter {
+	font-size: 15px;
+	font-family: 'Nunito', sans-serif;
+	width: 57%;
+	margin-top: 0px;
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+}
+
+.cainam-alert-center {
+	margin: 0 auto;
+	text-align: right;
+	width: 58%;
+	display: none;
+}
+
+#login-main-div {
+	margin-top: 190px;
+	border: 2px solid green;
+	border-radius: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background: #eee;
+}
+
+#reg-main-div {
+	border: 2px solid green;
+	border-radius: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 70px;
+	background: #eee;
+}
+
+input {
+	width: 55%;
+	font-size: 18px;
+}
+
+input[type=text], input[type=password] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 0px;
+	width: 55%;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+	font-weight: 400;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 1px solid #5d8ffc;
+	margin-bottom: 10px;
+	background: #5d8ffc;
+	color: #fff;
+	width: 58.5%;
+	margin-bottom: 40px;
+}
+
+.md-input:focus, .md-input:focus{
+	border: 2px solid #5d8ffc;
+}
+
+.login-gn-btn:hover, .reg-gn-btn:hover {
+	border: 2px solid #5d8ffc;
+	background: #fff;
+	color: #5d8ffc;
+}
+
+#reg-gender-div {
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	margin: auto;
+	width: 50%;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+p {
+	font-size: 20px;
+}
+
+/*Starting styling the radio button and related properties */
+
+.single-gender-container {
+	font-family: 'Nunito', sans-serif;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 15px;
+	width: 30%;
+	text-align: left;
+	padding-left: 45px;
+	margin-bottom: 8px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.single-gender-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.radio-checkmark {
+	position: absolute;
+	top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #5d8ffc;
+    border-radius: 50%;
+}
+
+.single-gender-container:hover input ~ .radio-checkmark {
+	background-color: #fff;
+}
+
+.single-gender-container input:checked ~ .radio-checkmark {
+	background-color: #2196F3;
+}
+
+.radio-checkmark:after {
+	content: "";
+    position: absolute;
+    display: none;
+}
+
+.single-gender-container input:checked ~ .radio-checkmark:after {
+	display: block;
+}
+
+.single-gender-container .radio-checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/*Ending styling the radio button and related properties */
+
+
+/*Starting styling the meter-bar*/
+
+meter {
+	margin: 0 auto 1em;
+  	width: 57%;
+  	height: 0.5em;
+  	padding: 0px;
+  	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;
+  	background: none;
+ 	background-color: rgba(0, 0, 0, 0.1);
+
+	-webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: #ccc;
+}
+
+meter[value="1"]::-webkit-meter-optimum-value { 
+	background: red; 
+}
+
+meter[value="2"]::-webkit-meter-optimum-value {
+	background: yellow; 
+}
+
+meter[value="3"]::-webkit-meter-optimum-value {
+	background: orange; 
+}
+
+meter[value="4"]::-webkit-meter-optimum-value {
+	background: green; 
+}
+
+
+meter[value="1"]::-moz-meter-bar {
+	background: red; 
+}
+
+meter[value="2"]::-moz-meter-bar {
+	background: yellow; 
+}
+
+meter[value="3"]::-moz-meter-bar {
+	background: orange;
+}
+
+meter[value="4"]::-moz-meter-bar {
+	background: green; 
+}
+
+/*Ending of styling the meter-bar*/

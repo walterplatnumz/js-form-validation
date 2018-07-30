@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="login-main-div">
+			<h1>LOGIN PAGE</h1>
+			<div id="lg-status-bar">This is the div that shows the error</div>
+			<div id="lg-username-div">
+				<input id="username" class="md-input" type="text" name="username" placeholder="Username">
+				<div class="cainam-alert-center" id="username-status" >Wrong Data</div>
+			</div>
+			<div id="login-password-div">
+				<input id="password" class="md-input" type="password" name="password" placeholder="Password">
+				<meter max="4" class="gn-meter" id="lg-meter"></meter>
+				<div class="cainam-alert-center" id="password-status" >Wrong Data</div>
+			</div>
+			<div>
+				<input id="login-btn" class="login-gn-btn" type="submit" name="login" value="Login">
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/controller-login.js"></script>
+	</body>
+</html>
